@@ -239,7 +239,8 @@ export default class Path {
    * Create a new `Path` object from a `file://` URL.
    */
   static fromFileURL(file: string): Path {
-    return new Path(url.fileURLToPath(file));
+    console.log(file)
+    return new Path(file.startsWith('file://') ? url.fileURLToPath(file) : 'file://' + file);
   }
 
   /**

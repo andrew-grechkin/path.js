@@ -1,0 +1,7 @@
+{
+  "name": "@mojojs/path",
+  "exports": "./src/path.ts",
+  "imports": {
+    "stack-utils": "npm:stack-utils"
+  }
+}
